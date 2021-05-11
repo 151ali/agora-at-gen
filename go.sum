@@ -1,0 +1,3 @@
+github.com/AgoraIO/Tools v0.0.0-20210510132816-12306a562bfb h1:KfrT0x7g7a8hlsQmhrRr6J76SusQu8dXMt2iKWZhACw=
+github.com/AgoraIO/Tools/DynamicKey/AgoraDynamicKey/go/src v0.0.0-20210510132816-12306a562bfb h1:y7kMPuvWauBfPLRBP3YodGti1TblWzMNeDftbTju6yA=
+github.com/AgoraIO/Tools/DynamicKey/AgoraDynamicKey/go/src v0.0.0-20210510132816-12306a562bfb/go.mod h1:4bXIK0ntDk9CqAXobmomWd7dedbfNv/aaIpmpqqzt+A=

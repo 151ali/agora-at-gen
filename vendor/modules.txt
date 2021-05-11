@@ -1,0 +1,4 @@
+# github.com/AgoraIO/Tools/DynamicKey/AgoraDynamicKey/go/src v0.0.0-20210510132816-12306a562bfb
+## explicit
+github.com/AgoraIO/Tools/DynamicKey/AgoraDynamicKey/go/src/AccessToken
+github.com/AgoraIO/Tools/DynamicKey/AgoraDynamicKey/go/src/RtcTokenBuilder
