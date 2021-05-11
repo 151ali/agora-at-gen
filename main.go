@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -47,12 +46,12 @@ func generateRtcToken(int_uid uint32, channelName string, role rtctokenbuilder.R
 
 	result, err := rtctokenbuilder.BuildTokenWithUID(appID, appCertificate, channelName, int_uid, role, expireTimestamp)
 	if err != nil {
-		fmt.Println(err)
+		log.Println(err)
 	} else {
-		fmt.Printf("Token with uid: %s\n", result)
-		fmt.Printf("uid is %d\n", int_uid)
-		fmt.Printf("ChannelName is %s\n", channelName)
-		fmt.Printf("Role is %d\n", role)
+		log.Printf("Token with uid: %s\n", result)
+		log.Printf("uid is %d\n", int_uid)
+		log.Printf("ChannelName is %s\n", channelName)
+		log.Printf("Role is %d\n", role)
 	}
 	rtc_token = result
 }
@@ -130,7 +129,7 @@ func main() {
 	// Handling routes
 	// RTC token from RTC num uid
 	http.HandleFunc("/fetch_rtc_token", rtcTokenHandler)
-	fmt.Printf("Starting server at port : " + port + " \n")
+	log.Printf("Starting server at port : " + port + " \n")
 
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatal(err)
